@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #form1 {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 350px;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00796b;
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="number"] {
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            border: 1px solid #00796b;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        button#addMore {
+            background-color: #4CAF50;
+            margin-bottom: 5px;
+        }
+
+        button:hover {
+            background-color: #005f47;
+        }
+
+        #result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="form1">
+        <label for="">Marksheet Generator</label>
+        <form id="marksheetForm">
+            <div id="subjectContainer">
+                <div class="subjectInput">
+                    <input type="text" class="subjectName" placeholder="Subject Name" required>
+                    <input type="number" class="subjectMarks" placeholder="Subject Marks" required>
+                </div>
+            </div>
+            <button type="button" id="addMore">Add More</button>
+            <button type="button" id="generateMarks">Generate Marksheet</button>
+        </form>
+    </div>
+
+    <div id="result"></div>
+    
+    
+
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
